@@ -1,0 +1,950 @@
+/* The Modal  */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-open {
+    display: block;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* line 1, ../WEB2019/Module2/src/sass/style.sass */
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* line 1, ../WEB2019/Module2/src/sass/_general.sass */
+
+header {
+    position: relative;
+    height: 50px;
+}
+
+
+/* line 5, ../WEB2019/Module2/src/sass/_general.sass */
+
+nav {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: #212121;
+    z-index: 5;
+}
+
+
+/* line 12, ../WEB2019/Module2/src/sass/_general.sass */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style: none;
+}
+
+
+/* line 19, ../WEB2019/Module2/src/sass/_general.sass */
+
+.menu_link {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+/* line 24, ../WEB2019/Module2/src/sass/_general.sass */
+
+.menu_item {
+    border-right: 2px dotted #000;
+    padding-right: 28px;
+}
+
+
+/* line 27, ../WEB2019/Module2/src/sass/_general.sass */
+
+.menu_item:last-child {
+    border-right: none;
+}
+
+
+/* line 30, ../WEB2019/Module2/src/sass/_general.sass */
+
+.subheader {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 84px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* line 37, ../WEB2019/Module2/src/sass/_general.sass */
+
+.subheader_logo {
+    margin-top: 16px;
+    display: block;
+    max-width: 100%;
+}
+
+
+/* line 42, ../WEB2019/Module2/src/sass/_general.sass */
+
+.subheader_official {
+    margin-top: 6px;
+    opacity: 0.5;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+/* line 50, ../WEB2019/Module2/src/sass/_general.sass */
+
+.subheader_call {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 19px;
+    text-align: right;
+}
+
+
+/* line 57, ../WEB2019/Module2/src/sass/_general.sass */
+
+.subheader_phone {
+    display: block;
+    margin-top: 8px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 12px;
+}
+
+
+/* line 67, ../WEB2019/Module2/src/sass/_general.sass */
+
+.subheader_btn {
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+/* line 2, ../WEB2019/Module2/src/sass/_mixins.sass */
+
+.subheader_btn:hover {
+    background-image: none;
+    background-color: #1eacc7;
+}
+
+
+/* line 82, ../WEB2019/Module2/src/sass/_general.sass */
+
+.promo {
+    min-height: 800px;
+    background: url(../img/bg/Main.png) center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+}
+
+
+/* line 87, ../WEB2019/Module2/src/sass/_general.sass */
+
+.promo_header {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+    margin: 0;
+}
+
+
+/* line 96, ../WEB2019/Module2/src/sass/_general.sass */
+
+.promo_subheader {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 22px;
+}
+
+
+/* line 106, ../WEB2019/Module2/src/sass/_general.sass */
+
+.promo_descr {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 23px;
+}
+
+
+/* line 114, ../WEB2019/Module2/src/sass/_general.sass */
+
+.promo_btn {
+    display: block;
+    margin: 118px auto 0 auto;
+    width: 259px;
+    height: 63px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 68px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* line 2, ../WEB2019/Module2/src/sass/_mixins.sass */
+
+.promo_btn:hover {
+    background-image: none;
+    background-color: #1eacc7;
+}
+
+
+/* line 133, ../WEB2019/Module2/src/sass/_general.sass */
+
+.reasons {
+    background-color: #fff;
+}
+
+
+/* line 136, ../WEB2019/Module2/src/sass/_general.sass */
+
+.label {
+    margin: 0 auto;
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    margin-top: 71px;
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: auto auto;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* line 150, ../WEB2019/Module2/src/sass/_general.sass */
+
+.reasons_header {
+    display: block;
+    color: #222222;
+    text-align: center;
+    margin-top: 38px;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/* line 159, ../WEB2019/Module2/src/sass/_general.sass */
+
+.subtitle {
+    margin-top: 19px;
+    color: #222222;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+}
+
+
+/* line 167, ../WEB2019/Module2/src/sass/_general.sass */
+
+.reasons_item {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* line 174, ../WEB2019/Module2/src/sass/_general.sass */
+
+.reasons_circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+    width: 113px;
+    height: 113px;
+    border-radius: 50%;
+    background-color: #1eacc7;
+}
+
+
+/* line 185, ../WEB2019/Module2/src/sass/_general.sass */
+
+.reasons_desr {
+    display: inline-block;
+    width: 341px;
+    color: #202020;
+    margin-left: 26px;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+
+/* line 195, ../WEB2019/Module2/src/sass/_general.sass */
+
+span {
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+/* line 200, ../WEB2019/Module2/src/sass/_general.sass */
+
+.mobile {
+    min-height: 864px;
+    padding: 48px 0 79px 0;
+    background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+}
+
+
+/* line 204, ../WEB2019/Module2/src/sass/_general.sass */
+
+.mobile .row {
+    margin-top: 32px;
+}
+
+
+/* line 206, ../WEB2019/Module2/src/sass/_general.sass */
+
+.mobile_item {
+    position: relative;
+    width: 320px;
+    height: 280px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+    padding-top: 92px;
+}
+
+
+/* line 213, ../WEB2019/Module2/src/sass/_general.sass */
+
+.mobile_item_1 {
+    background: url("../img/bg/mobile_screen_1.jpg") center center/cover no-repeat;
+}
+
+
+/* line 215, ../WEB2019/Module2/src/sass/_general.sass */
+
+.mobile_item_2 {
+    background: url("../img/bg/mobile_screen_2.jpg") center center/cover no-repeat;
+}
+
+
+/* line 217, ../WEB2019/Module2/src/sass/_general.sass */
+
+.mobile_item_3 {
+    background: url("../img/bg/mobile_screen_3.jpg") center center/cover no-repeat;
+}
+
+
+/* line 219, ../WEB2019/Module2/src/sass/_general.sass */
+
+.mobile_item_4 {
+    background: url("../img/bg/mobile_screen_4.jpg") center center/cover no-repeat;
+}
+
+
+/* line 221, ../WEB2019/Module2/src/sass/_general.sass */
+
+.mobile_item_5 {
+    background: url("../img/bg/mobile_screen_5.jpg") center center/cover no-repeat;
+}
+
+
+/* line 223, ../WEB2019/Module2/src/sass/_general.sass */
+
+.mobile_item_6 {
+    background: url("../img/bg/mobile_screen_6.jpg") center center/cover no-repeat;
+}
+
+
+/* line 225, ../WEB2019/Module2/src/sass/_general.sass */
+
+.mobile_item_subtitle {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* line 232, ../WEB2019/Module2/src/sass/_general.sass */
+
+.mobile_item_plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 26px;
+    height: 26px;
+    background-color: #000000;
+    margin: 0 auto;
+    border-radius: 100%;
+    padding: 6px;
+    cursor: pointer;
+}
+
+
+/* line 247, ../WEB2019/Module2/src/sass/_general.sass */
+
+.mobile_item_plus:before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 2px;
+    background-color: #1eacc7;
+    transition: 0.5s all;
+}
+
+
+/* line 254, ../WEB2019/Module2/src/sass/_general.sass */
+
+.mobile_item_plus:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    height: 14px;
+    width: 2px;
+    background-color: #1eacc7;
+    transition: 0.5s all;
+}
+
+
+/* line 265, ../WEB2019/Module2/src/sass/_general.sass */
+
+.mobile_item_plus:hover:before,
+.mobile_item_plus:hover:after {
+    background-color: #ff5656;
+}
+
+
+/* line 268, ../WEB2019/Module2/src/sass/_general.sass */
+
+.choice {
+    position: relative;
+    min-height: 895px;
+    padding: 57px 0 138px 0;
+    background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+}
+
+
+/* line 273, ../WEB2019/Module2/src/sass/_general.sass */
+
+.choice_black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 499px;
+    width: 100%;
+    background-color: #070716;
+    z-index: 1;
+}
+
+
+/* line 281, ../WEB2019/Module2/src/sass/_general.sass */
+
+.choice_label {
+    position: relative;
+    margin: 0 auto;
+    width: 112px;
+    height: 24px;
+    background-color: #fff;
+    color: #000000;
+    font-size: 11px;
+    font-weight: 300;
+    padding: 5px 12px;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 2;
+}
+
+
+/* line 294, ../WEB2019/Module2/src/sass/_general.sass */
+
+.choice_header {
+    display: block;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    margin-top: 38px;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+
+/* line 304, ../WEB2019/Module2/src/sass/_general.sass */
+
+.choice_subtitle {
+    position: relative;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    z-index: 2;
+}
+
+
+/* line 312, ../WEB2019/Module2/src/sass/_general.sass */
+
+.choice_img {
+    position: relative;
+    display: block;
+    margin: 56px auto 0 auto;
+    z-index: 2;
+}
+
+
+/* line 317, ../WEB2019/Module2/src/sass/_general.sass */
+
+.choice_descr {
+    text-align: center;
+    color: #222222;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+
+/* line 324, ../WEB2019/Module2/src/sass/_general.sass */
+
+.require {
+    padding: 68px 0 84px 0;
+}
+
+
+/* line 326, ../WEB2019/Module2/src/sass/_general.sass */
+
+.require_block {
+    margin: 33px 0;
+}
+
+
+/* line 328, ../WEB2019/Module2/src/sass/_general.sass */
+
+.require_block_nbm {
+    margin-bottom: 0px;
+}
+
+
+/* line 330, ../WEB2019/Module2/src/sass/_general.sass */
+
+.require_title {
+    color: #1ca8c3;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+/* line 334, ../WEB2019/Module2/src/sass/_general.sass */
+
+.require_list {
+    list-style-type: none;
+    padding-left: 50px;
+    margin-top: 22px;
+}
+
+
+/* line 338, ../WEB2019/Module2/src/sass/_general.sass */
+
+.require_list li {
+    position: relative;
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+
+/* line 343, ../WEB2019/Module2/src/sass/_general.sass */
+
+.require_list li:before {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 3px;
+    width: 21px;
+    height: 20px;
+    background: url("../icons/check_blue.svg") center center/cover no-repeat;
+}
+
+
+/* line 351, ../WEB2019/Module2/src/sass/_general.sass */
+
+.require_descr {
+    color: #1ca8c3;
+    font-weight: 300;
+}
+
+
+/* line 355, ../WEB2019/Module2/src/sass/_general.sass */
+
+.require .warning .require_title {
+    color: #ff5656;
+}
+
+
+/* line 359, ../WEB2019/Module2/src/sass/_general.sass */
+
+.require .warning .require_list li:before {
+    background: url("../icons/check_red.svg") center center/cover no-repeat;
+}
+
+
+/* line 362, ../WEB2019/Module2/src/sass/_general.sass */
+
+.world {
+    height: 717px;
+    padding: 49px 0 49px 0;
+    background: url("../img/bg/map.jpg") center center/cover no-repeat;
+}
+
+
+/* line 366, ../WEB2019/Module2/src/sass/_general.sass */
+
+.world_descr {
+    text-align: center;
+    margin-top: 436px;
+    color: #1fbad6;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+/* line 374, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer {
+    height: 155px;
+}
+
+
+/* line 376, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_rectangle {
+    width: 299px;
+    height: 4px;
+    background-color: #1fbad6;
+    margin: 0 auto;
+    margin-top: 14px;
+}
+
+
+/* line 382, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 23px;
+}
+
+
+/* line 388, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_wrapper .socials_wrap {
+    display: block;
+    margin-top: 20px;
+    width: 33%;
+}
+
+
+/* line 392, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_wrapper .socials_wrap .footer_socials {
+    width: 190px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* line 396, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_wrapper .socials_wrap .footer_socials a {
+    margin-right: 10px;
+}
+
+
+/* line 398, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_wrapper .link_wrap {
+    display: block;
+    width: 33%;
+}
+
+
+/* line 401, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_wrapper .link_wrap .links {
+    display: block;
+    width: 390px;
+}
+
+
+/* line 404, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_wrapper .link_wrap .links .footer_links_big {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 32px;
+}
+
+
+/* line 408, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_wrapper .link_wrap .links .footer_links_big a {
+    color: #070716;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+/* line 413, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_wrapper .link_wrap .links .footer_links_small {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+
+/* line 418, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_wrapper .link_wrap .links .footer_links_small a {
+    color: #999999;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+/* line 423, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_wrapper .link_wrap .links .footer_lang {
+    display: block;
+    color: #1fbad6;
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: 19px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* line 431, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_wrapper .mobile_wrap {
+    display: block;
+    width: 33%;
+}
+
+
+/* line 434, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_wrapper .mobile_wrap .footer_mobile {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+/* line 439, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_blackline {
+    height: 20px;
+    background-color: #070716;
+    margin-top: 31px;
+}
+
+
+/* line 443, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_social_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #070716;
+    border-radius: 50%;
+}
+
+
+/* line 451, ../WEB2019/Module2/src/sass/_general.sass */
+
+footer .footer_social_item i {
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    /* line 3, ../WEB2019/Module2/src/sass/_media.sass */
+    .menu_item {
+        padding-right: 20px;
+    }
+    /* line 5, ../WEB2019/Module2/src/sass/_media.sass */
+    .menu_link {
+        font-size: 13px;
+    }
+    /* line 8, ../WEB2019/Module2/src/sass/_media.sass */
+    .promo_header {
+        font-size: 50px;
+    }
+    /* line 11, ../WEB2019/Module2/src/sass/_media.sass */
+    .reasons_block {
+        align-items: flex-start;
+    }
+    /* line 13, ../WEB2019/Module2/src/sass/_media.sass */
+    .reasons_descr {
+        width: 300px;
+    }
+}
+
+@media (max-width: 991px) {
+    /* line 19, ../WEB2019/Module2/src/sass/_media.sass */
+    .menu_item {
+        padding-right: 8px;
+    }
+    /* line 21, ../WEB2019/Module2/src/sass/_media.sass */
+    .menu_link {
+        font-size: 10px;
+    }
+    /* line 25, ../WEB2019/Module2/src/sass/_media.sass */
+    .subheader_logo img {
+        width: 100%;
+    }
+    /* line 27, ../WEB2019/Module2/src/sass/_media.sass */
+    .subheader_official {
+        font-size: 11px;
+    }
+    /* line 29, ../WEB2019/Module2/src/sass/_media.sass */
+    .subheader_phone {
+        font-size: 18px;
+    }
+    /* line 31, ../WEB2019/Module2/src/sass/_media.sass */
+    .subheader_btn {
+        margin-top: 21px;
+        height: 40px;
+        width: 100%;
+        font-size: 12px;
+    }
+    /* line 37, ../WEB2019/Module2/src/sass/_media.sass */
+    .subheader .promo_header {
+        font-size: 40px;
+    }
+    /* line 39, ../WEB2019/Module2/src/sass/_media.sass */
+    .subheader .promo_subheader {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* line 43, ../WEB2019/Module2/src/sass/_media.sass */
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100hv;
+        padding: 20px 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* line 52, ../WEB2019/Module2/src/sass/_media.sass */
+    .menu_item {
+        padding-right: 0;
+        border: none;
+    }
+}
+
+
+/*# sourceMappingURL=style.css.map */
